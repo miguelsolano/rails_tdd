@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'rubocop', '~> 1.0', require: false
 
+gem 'pg'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -38,6 +40,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
 end
 
 group :development do

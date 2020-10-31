@@ -9,6 +9,6 @@ feature "User attempts to create todo" do
     fill_in "Title", with: "Learn TDD in ruby"
     click_on "Submit"
 
-    expect(page).to have_css '.todos li', text: "Learn TDD in ruby"
+    expect(page).to have_content "Learn TDD in ruby"
   end
 end
